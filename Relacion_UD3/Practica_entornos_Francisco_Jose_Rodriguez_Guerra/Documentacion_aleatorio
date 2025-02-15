@@ -1,0 +1,39 @@
+"""
+Modulo con funciones basicas que usan la libreria random.
+
+Funciones:
+- lanzar_moneda(): Lanza una moneda.
+- lanzar_dado(): Lanza un dado de 6 caras.
+- elegir_numero_loteria(): Genera un numero de loteria.
+- generar_contrasena(longitud): Crea una contrasena con letras minusculas.
+- seleccionar_elemento(lista): Devuelve un elemento aleatorio de una lista.
+"""
+
+import random
+
+def lanzar_moneda():
+    """Lanza una moneda y devuelve 'Cara' o 'Cruz'."""
+    if random.randint(0, 1) == 0:
+        return "Cara"
+    return "Cruz"
+
+def lanzar_dado():
+    """Lanza un dado de 6 caras."""
+    return random.randint(1, 6)
+
+def elegir_numero_loteria():
+    """Genera un numero de loteria de 5 cifras."""
+    return random.randint(0, 99999)
+
+def generar_contrasena(longitud=8):
+    """Crea una contrasena aleatoria con letras minusculas."""
+    contrasena = ""
+    for i in range(longitud):
+        contrasena += random.choice("abcdefghijklmnopqrstuvwxyz")
+    return contrasena
+
+def seleccionar_elemento(lista):
+    """Devuelve un elemento aleatorio de una lista o None si esta vacia."""
+    if lista:
+        return lista[random.randint(0, len(lista) - 1)]
+    return None
