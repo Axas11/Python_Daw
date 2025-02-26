@@ -4,11 +4,10 @@ jugadores_chipiona = [
     "Juan Pérez", "Antonio Ruiz", "Carlos García", 
     "Manuel López", "Jesús Ramírez", "Luis Fernández", 
     "Pedro Sánchez", "Alberto Márquez", "Francisco Díaz", 
-    "Rubén Torres", "Javier Morales"
+    "Rubén Torres", "Javier Morales", "pep"
 ]
 jugador = 0
 
 for jugador in jugadores_chipiona:
-    n_letras = len(jugador)
-    if jugador[0].lower() == jugador(n_letras-1):
+    if jugador[0].lower() == jugador[-1].lower():  
         print(jugador)
