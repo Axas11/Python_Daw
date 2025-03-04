@@ -47,7 +47,7 @@ for fila in planetas:
     if fila[1] == False:
         radio = fila[2]
         media_rocosos += radio
-        cantidad_rocosos += 122
+        cantidad_rocosos += 1
 
 if cantidad_rocosos > 0:
      media_rocosos = media_rocosos / cantidad_rocosos
