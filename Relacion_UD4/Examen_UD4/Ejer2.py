@@ -22,7 +22,7 @@ animal_mayor_diferencia = ""
 contador = 0
 
 for peso in pesos_animales:
-    diferencia = peso[1] and peso[0]
+    diferencia = peso[1] - peso[0]
     if diferencia > mayor_diferencia:
         mayor_diferencia = diferencia
         animal_mayor_diferencia = animales_domesticos[contador]
