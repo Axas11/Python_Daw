@@ -1,4 +1,4 @@
-#Ejercicio 4. Es el festival de los juegos RPG.  Crea un programa que muestre por pantalla el nombre y el precio final de todos los juegos suponiendo un IVA del 21% y teniendo SOLO los juegos cuyo género sea terror un descuento del 25%.
+#Ejercicio 4. Es el festival de los juegos RPG2.  Crea un programa que muestre por pantalla el nombre y el precio final de todos los juegos suponiendo un IVA del 21% y teniendo SOLO los juegos cuyo género sea terror un descuento del 25%.
 
 from Videojuego import Videojuego  
 
