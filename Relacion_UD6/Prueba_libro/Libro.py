@@ -30,3 +30,4 @@ class Libro:
     def actualizar_nota(self, cambio: int):
         """Cambia la puntuación del libro sin exceder 10."""
         self.puntuacion = max(0, min(self.puntuacion+cambio, 10))
+
