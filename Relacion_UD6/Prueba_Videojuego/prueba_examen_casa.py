@@ -20,34 +20,29 @@ juegos = [
    Videojuego2("Final Fantasy VII Rebirth", ["RPG", "Accion"], datetime(2025, 2, 10), 9.7, 16, 69.99, 100)
 ]
 
-#e1a(videojuegos: list) -> Videojuego: Devuelve el videojuego con mayor puntuación
-#def e1a(juegos:list) -> Videojuego2:
-#    mayor_puntuacion = juegos[0]
-#    for juego in juegos:
-#        if juego.puntuacion > mayor_puntuacion.puntuacion:
-#            mayor_puntuacion = juego
-#    return mayor_puntuacion
+def e1a(juegos:list) -> Videojuego2:
+    mayor_puntuacion = juegos[0]
+    for juego in juegos:
+        if juego.puntuacion > mayor_puntuacion.puntuacion:
+            mayor_puntuacion = juego
+    return mayor_puntuacion
 
-#print(e1a(juegos))
-#e1a(videojuegos: list) -> Videojuego: Devuelve el videojuego con mayor puntuación
+print(e1a(juegos))
 
-
-#def d1ab(juegos:list) -> Videojuego2:
-#    max_puntuacion = max([juego.puntuacion for juego in juegos])
-#    return [juego for juego in juegos if juego.puntuacion == max_puntuacion][0]
+def d1ab(juegos:list) -> Videojuego2:
+    max_puntuacion = max([juego.puntuacion for juego in juegos])
+    return [juego for juego in juegos if juego.puntuacion == max_puntuacion][0]
 
 #print(d1ab(juegos))
-#e1b(videojuegos: list) -> Videojuego: Devuelve el videojuego con mayor puntuación del género RPG.
-#def e1b(juegos:list) -> Videojuego2:
-#    rpgs = [juego for juego in juegos if "RPG" in juego.generos]
-#    max_puntuacion = max([juego.puntuacion for juego in rpgs])
-#    return [juego for juego in rpgs if juego.puntuacion == max_puntuacion][0]
 
-#print(e1b(juegos).nombre)
+def e1b(juegos:list) -> Videojuego2:
+    rpgs = [juego for juego in juegos if "RPG" in juego.generos]
+    max_puntuacion = max([juego.puntuacion for juego in rpgs])
+    return [juego for juego in rpgs if juego.puntuacion == max_puntuacion][0]
 
+print(e1b(juegos).nombre)
 def e1bb(juegos:list) -> Videojuego2:
     rpgs = [juego for juego in juegos if "RPG" in juego.generos]
     max_puntuacion = max([juego.puntuacion for juego in rpgs])
     return [juego for juego in rpgs if juego.puntuacion == max_puntuacion][0]
 
-print(e1bb(juegos).nombre)
