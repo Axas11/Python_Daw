@@ -1,4 +1,4 @@
-class Libro:
+class libro:
     def __init__(self, nombre: str, autores: list, paginas: int, generos: list, puntuacion: int):
         """
         Constructor de la clase Libro.

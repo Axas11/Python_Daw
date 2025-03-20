@@ -1,6 +1,8 @@
 from datetime import datetime
-class Videojuego:
-   def __init__(self, nombre: str, generos: list, fecha_salida: str, puntuacion: float, PEGI: int, precio_base: float, peso: float):
+
+
+class Videojuego2:
+   def __init__(self, nombre: str, generos: list, fecha_salida: datetime, puntuacion: float, PEGI: int, precio_base: float, peso: float):
        self.nombre = nombre
        self.generos = generos
        self.fecha_salida = fecha_salida
@@ -9,11 +11,6 @@ class Videojuego:
        self.precio_base = precio_base
        self.peso = peso # En GB
 
-       
-   def tiempo_pasado(nacimiento: datetime) -> int:
-       hoy = datetime.now()
-       edad = hoy.year - nacimiento.year - ((hoy.month, hoy.day) < (nacimiento.month, nacimiento.day))
-       return edad
 
    def precio_final(self, impuestos: float, descuento: float) -> float:
        """
@@ -39,3 +36,4 @@ class Videojuego:
                f"Precio Base: {self.precio_base}€\n"
                f"Peso: {self.peso} GB\n"
                f"Apto para menores: {'Sí' if self.apto_menores() else 'No'}")
+
