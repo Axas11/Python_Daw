@@ -1,6 +1,4 @@
 from datetime import datetime
-
-
 class Videojuego2:
    def __init__(self, nombre: str, generos: list, fecha_salida: datetime, puntuacion: float, PEGI: int, precio_base: float, peso: float):
        self.nombre = nombre

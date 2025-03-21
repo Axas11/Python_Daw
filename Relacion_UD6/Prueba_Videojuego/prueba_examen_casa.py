@@ -3,11 +3,10 @@
 #e1c(videojuegos: list) -> list: Devuelve todos los juegos que salieron en los primeros 6 meses del año
 #e1d(videojuegos: list) -> list: Devuelve todos los juegos con tres o más géneros
 
-
 from Videojuego2 import Videojuego2
 from datetime import datetime  
 
-juegos = [
+jugadores = [
    Videojuego2("Final Fantasy VI", ["RPG"], datetime(1994, 4, 2), 9.5, 12, 49.99, 0.5),
    Videojuego2("The Legend of Zelda: Ocarina of Time", ["Aventura", "Accion"], datetime(1998, 11, 11), 9.9, 12, 39.99, 0.8),
    Videojuego2("Grand Theft Auto: San Andreas", ["Accion", "MundoAbierto"], datetime(2004, 10, 3), 9.6, 18, 29.99, 4.7),
@@ -20,14 +19,14 @@ juegos = [
    Videojuego2("Final Fantasy VII Rebirth", ["RPG", "Accion"], datetime(2025, 2, 10), 9.7, 16, 69.99, 100)
 ]
 
-def e1a(juegos:list) -> Videojuego2:
-    mayor_puntuacion = juegos[0]
-    for juego in juegos:
+def e1a(jugadores:list) -> Videojuego2:
+    mayor_puntuacion = jugadores[0]
+    for juego in jugadores:
         if juego.puntuacion > mayor_puntuacion.puntuacion:
             mayor_puntuacion = juego
     return mayor_puntuacion
 
-print(e1a(juegos))
+print(e1a(jugadores))
 
 def d1ab(juegos:list) -> Videojuego2:
     max_puntuacion = max([juego.puntuacion for juego in juegos])
@@ -46,3 +45,7 @@ def e1bb(juegos:list) -> Videojuego2:
     max_puntuacion = max([juego.puntuacion for juego in rpgs])
     return [juego for juego in rpgs if juego.puntuacion == max_puntuacion][0]
 
+def e1c3(juegos: list) -> list:
+    return [juego for juego in juegos if juego.fecha_salida.month>= 1 and juego.fecha_salida.month<= 6]
+
+print([juego.nombre for juego in e1c3(juegos)])
