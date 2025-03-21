@@ -33,6 +33,7 @@ def f2a(jugadores: list) -> Jugador:
     return [persona for persona in jugadores if persona.partidos_jugados == max_partidos][0]
 
 print(f"f2a. Jugador con mas partidos: {f2a(jugadores).nombre}")
+
 def f2b(jugadores: list) -> Jugador:
     max_partidos = max([persona.goles for persona in jugadores])
     return [persona for persona in jugadores if persona.goles == max_partidos][0]
