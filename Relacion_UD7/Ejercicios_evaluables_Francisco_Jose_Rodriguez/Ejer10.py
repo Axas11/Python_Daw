@@ -7,7 +7,8 @@ juegos = [
     EjemplarVideojuego("Red Dead Redemption 2", datetime(2018, 10, 25), 9.8, ["Accion", "Aventura", "MundoAbierto"], 2, 4),
     EjemplarVideojuego("Elden Ring", datetime(2022, 2, 25), 9.7, ["RPG", "Accion", "MundoAbierto"], 3, 5),
     EjemplarVideojuego("The Witcher 3: Wild Hunt", datetime(2015, 5, 19), 9.5, ["RPG", "Aventura", "MundoAbierto"], 4, 3),
-    EjemplarVideojuego("The Witcher 3: Wild Hunt", datetime(2015, 5, 19), 9.5, ["RPG", "Aventura", "MundoAbierto"], 5, 1)
+    EjemplarVideojuego("The Witcher 3: Wild Hunt", datetime(2015, 5, 19), 9.5, ["RPG", "Aventura", "MundoAbierto"], 5, 1),
+     EjemplarVideojuego("The Witcher 3: Wild Hunt", datetime(2015, 5, 19), 9.5, ["RPG", "Aventura", "MundoAbierto"], 5, 1)
 ]
 
 coleccion = ColeccionVideojuegos(juegos)

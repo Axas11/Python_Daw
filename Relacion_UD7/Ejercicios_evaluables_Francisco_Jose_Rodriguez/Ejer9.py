@@ -21,7 +21,7 @@ class ColeccionVideojuegos:
             if juegoComp in catalogo and juegoComp not in repetidos:
                 repetidos.append(juegoComp)
             else:
-                catalogo.append(juegoComp)
+                catalogo.append(juegoComp)  
 
         for juego in self.coleccion:
             if [juego.nombre, juego.fecha_salida] in repetidos:
