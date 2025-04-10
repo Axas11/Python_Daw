@@ -1,0 +1,94 @@
+Ejercicio 6 
+
+Crea la dataclass Pelicula, con los siguientes atributos: titulo (str), es_animada (bool) y num_premios (int). 
+ Crea una lista con 9 objetos de esta clase. 
+
+Muestra por pantalla todos los objetos de la lista mostrando todos sus atributos. 
+
+Filtra la lista para que contenga las películas animadas sin premios. Muestra por pantalla su título. 
+
+Ejercicio 7 
+
+Crea la clase Pelicula con los siguientes atributos: titulo (str), fecha_estreno (datetime), valoracion (float) y generos (list[str]). 
+
+En el constructor comprueba que la valoración no pueda ser inferior a 0 ni superior a 10. 
+
+Implementa los siguientes métodos: 
+
+__eq__ → dos películas son iguales si lo son su título y su fecha de estreno. 
+
+__str__ → se deben mostrar todos los atributos. 
+
+__gt__, __ge__, __le__ y __lt__ → diremos que una película es mayor/menor que otra según su valoración. 
+
+es_del_genero(genero: str) -> bool → devuelve True si la película pertenece al género pasado como argumento, False en caso contrario. 
+
+ 
+
+Ejercicio 8 
+
+Crea la clase EjemplarPelicula que herede de Pelicula. 
+ Además de los atributos de Pelicula, tendrá los siguientes atributos: 
+
+id (int): un número único que identifica a cada ejemplar 
+
+estado (int): un número entero entre 1 y 5 que identifica el estado de conservación del ejemplar: 
+
+1 → precintado 
+
+2 → como nuevo 
+
+3 → ligeros desperfectos 
+
+4 → desperfectos grandes 
+
+5 → sin caja y/o carátula 
+
+Implementa los siguientes métodos: 
+
+__eq__ → dos ejemplares son iguales si comparten id 
+
+__str__ → muestra todos los atributos de la clase 
+
+__gt__, __ge__, __le__, __lt__ → una película es mayor si su estado de conservación es mejor 
+
+estado_str() -> str → devuelve una cadena de texto con el estado de conservación 
+
+ 
+
+Ejercicio 9 
+
+Crea la clase ColeccionPeliculas cuyo único atributo será una lista de objetos de la clase EjemplarPelicula. 
+
+Implementa los siguientes métodos: 
+
+__str__ → muestra todos los ejemplares de la colección, solo con título y estado (como texto) 
+
+peliculas_repetidas() -> list[Pelicula] → devuelve una lista con las películas de las cuales hay varios ejemplares 
+
+mostrar_peliculas_repetidas() → muestra los títulos de las películas repetidas 
+
+eliminar_pelicula(id: int) → elimina un ejemplar mediante su id 
+
+ 
+
+Ejercicio 10 
+
+Utilizando las clases de los ejercicios anteriores, crea un programa con la siguiente colección de películas: 
+
+A continuación: 
+
+Muestra por pantalla todas las películas (título y estado) 
+
+Muestra por pantalla las películas repetidas (solo el título) 
+
+Elimina la película cuyo id es 4 
+
+Vuelve a mostrar por pantalla las películas repetidas 
+
+Ejercicio 11
+Añade los siguientes métodos: media_valoracion(), peliculas_por_genero(), mejor_valorada()
+
+Ejercicio 12
+Crea una funcion que busque ejemplares compatibles por genero y estado minimo
+buscar_ejemplares_compatibles(coleccion, genero: str, minimo_estado: int)
