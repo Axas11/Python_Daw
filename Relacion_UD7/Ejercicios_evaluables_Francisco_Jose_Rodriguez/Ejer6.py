@@ -1,4 +1,4 @@
-from dataclasses import dataclass
+2from dataclasses import dataclass
 
 @dataclass
 class Planeta:
