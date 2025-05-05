@@ -1,0 +1,26 @@
+Disfruta del siguiente video: https://www.youtube.com/watch?v=O4OwjyBCCIg
+
+Una vez visualizado, haz los siguientes ejercicios:
+Ejercicio 1. Escribe un programa que cuente y muestre por pantalla el número total de líneas que tiene el archivo quijote.txt.
+Ejercicio 2. Escribe un programa que cuente cuántas líneas del archivo quijote.txt empiezan por la palabra "Don"
+Ejercicio 3. Escribe un programa que cuente cuántas veces aparece la palabra "caballero" en todo el contenido del archivo. Ten en cuenta que puede aparecer en mayúsculas o minúsculas.
+Ejercicio 4. Escribe un programa que calcule la longitud media (en número de caracteres) de las líneas del archivo
+Ejercicio 5. Escribe un programa que determine cuál es la línea más larga del archivo quijote.txt, y muestre esa línea junto con su número de caracteres.
+Ejercicio 6.  Los bonsáis son una forma de arte viva que combina naturaleza, paciencia y estética en miniatura. Cada ejemplar esculpe el paso del tiempo en sus ramas, reflejando el cuidado meticuloso de quien lo cultiva. Fascinan no solo por su belleza, sino porque condensan en pocos centímetros la grandeza de un árbol centenario, invitándonos a contemplar la calma, la armonía y el equilibrio. Cuidar un bonsái no es solo jardinería: es casi una meditación con raíces.
+Crea un programa que a partir del siguiente fichero de texto que representa datos de bonsais:
+Nombre,Delicadeza,AlturaMediaCM,FechaPoda,Plagas
+Ficus Retusa,2,40,15/03/2024,Cochinilla-Pulgón
+Juniperus Procumbens,3,30,12/02/2024,Ácaros-Araña roja
+Olmo Chino,1,45,10/04/2024,Pulgón-Cochinilla
+Acer Palmatum,3,55,20/03/2024,Minador de hojas-Mildiu
+Carmona Microphylla,3,35,18/02/2024,Trips-Cochinilla
+Pino Negro Japonés,2,65,05/03/2024,Orugas-Nematodos
+Serissa Foetida,3,25,01/04/2024,Mosca blanca-Pulgón
+Zelkova Serrata,2,40,22/03/2024,Ácaros-Pulgón
+Ligustrum Sinense,1,35,11/03/2024,Cochinilla-Mosca blanca
+Bougainvillea Glabra,2,50,08/04/2024,Trips-Orugas
+Crea una lista de objetos de la clase y los muestre por pantalla. Una vez creada encuentra el nombre de los bonsais que son atacados por el pulgón.
+Ejercicio 7.  Crea una clase a tu elección (el único requisito es que uno de sus atributos sea de tipo datetime y otro de tipo lista). Crea un fichero .csv con datos de 10 objetos de dicha clase (utiliza Chat-GPT para ir rápido). Crea un programa que lea dicho fichero y que cree una lista de objetos de dicha clase. Crea un filtro que seleccione algunos objetos de la lista.
+Ejercicio 8. Modifica la práctica de la UD7 para que los objetos de inicio sean leídos desde un fichero .CSV
+Ejercicio 9. Imagina que quieres que tu hijo practique la tabla de multiplicar del 8. ¿Cómo modificarías el fichero config.ini?
+Ejercicio 10. Haz que tu práctica de la UD2 (el calculatrón) lea la configuración desde un fichero config.ini
