@@ -10,8 +10,8 @@ class GafaGraduada(Gafa):
 
     def __str__(self):
         base = super().__str__()
-        filtro = "Sí" if self.tiene_filtro_luz_azul else "No"
-        return base + ", Graduacion: " + str(self.graduacion) + ", Tipo Cristal: " + self.tipo_cristal + ", Filtro Azul: " + filtro + ", Precio: " + str(self.precio) + "€, Stock: " + str(self.stock)
+        filtro = "Si" if self.tiene_filtro_luz_azul else "No"
+        return base + ", Graduacion: " + str(self.graduacion) + ", Tipo Cristal: " + self.tipo_cristal + ", Filtro Azul: " + filtro + ", Precio: " + str(self.precio) + "$, Stock: " + str(self.stock)
 
     def __lt__(self, other):
         return self.precio < other.precio

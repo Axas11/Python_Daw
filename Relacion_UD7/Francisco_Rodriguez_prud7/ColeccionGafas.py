@@ -1,11 +1,11 @@
 class ColeccionGafas:
-    def __init__(self):
-        self.gafas = []
+    def __init__(self, coleccion):
+        self.gafas = coleccion
 
     def __str__(self):
         resultado = ""
         for i, gafa in enumerate(self.gafas):
-            linea = str(i) + ". " + gafa.marca + " - " + gafa.modelo + " (" + str(gafa.precio) + "€)\n"
+            linea = str(i) + ". " + gafa.marca + " - " + gafa.modelo + " (" + str(gafa.precio) + "$)\n"
             resultado += linea
         return resultado.strip()
 
@@ -16,7 +16,7 @@ class ColeccionGafas:
         if 0 <= pos < len(self.gafas):
             del self.gafas[pos]
         else:
-            print("Posición no válida. No se pudo borrar.")
+            print("Posicion no valida. No se pudo borrar.")
 
     def mostrar(self, pos):
         if 0 <= pos < len(self.gafas):
@@ -28,20 +28,13 @@ class ColeccionGafas:
                 "4. Colores: " + ", ".join(gafa.colores_disponibles),
                 "5. Graduacion: " + str(gafa.graduacion),
                 "6. Tipo Cristal: " + gafa.tipo_cristal,
-                "7. Filtro Luz Azul: " + ("Sí" if gafa.tiene_filtro_luz_azul else "No"),
-                "8. Precio: " + str(gafa.precio) + "€",
+                "7. Filtro Luz Azul: " + ("Si" if gafa.tiene_filtro_luz_azul else "No"),
+                "8. Precio: " + str(gafa.precio) + "$",
                 "9. Stock: " + str(gafa.stock)
             ]
             return "\n".join(atributos)
         else:
-            print("Posición no válida.")
-            return ""
-
-    def ordenar_por_precio_ascendente(self):
-        self.gafas.sort()
-
-    def ordenar_por_precio_descendente(self):
-        self.gafas.sort(reverse=True)
+            print("Posicion no valida.")
 
     def buscar_por_marca(self, marca):
         return [g for g in self.gafas if g.marca.lower() == marca.lower()]
